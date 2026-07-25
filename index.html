@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SHOP TB SV2</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- HEADER -->
+<!-- ========================= -->
+
+<header>
+
+    <div class="logo">
+
+        🎮 SHOP TB SV2
+
+    </div>
+
+    <nav>
+
+        <button onclick="showShop()">
+
+            Cửa hàng
+
+        </button>
+
+        <button onclick="openAdmin()">
+
+            Admin
+
+        </button>
+
+    </nav>
+
+</header>
+
+<!-- ========================= -->
+<!-- SHOP -->
+<!-- ========================= -->
+
+<section id="shop">
+
+    <div class="title">
+
+        <h1>
+
+            Danh sách Game
+
+        </h1>
+
+        <input
+            id="search"
+            type="text"
+            placeholder="Tìm kiếm game...">
+
+    </div>
+
+    <div id="product-list">
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ADMIN -->
+<!-- ========================= -->
+
+<section
+    id="admin"
+    class="hidden">
+
+    <div id="login-box">
+
+        <h2>
+
+            Đăng nhập Admin
+
+        </h2>
+
+        <input
+            id="username"
+            placeholder="Tài khoản">
+
+        <input
+            id="password"
+            type="password"
+            placeholder="Mật khẩu">
+
+        <button onclick="login()">
+
+            Đăng nhập
+
+        </button>
+
+    </div>
+
+    <div
+        id="admin-panel"
+        class="hidden">
+
+        <h2>
+
+            Quản lý sản phẩm
+
+        </h2>
+
+        <input
+            id="name"
+            placeholder="Tên game">
+
+        <input
+            id="price"
+            placeholder="Giá">
+
+        <input
+            id="image"
+            type="file"
+            accept="image/*">
+
+        <img
+            id="preview">
+
+        <button
+            onclick="addProduct()">
+
+            Thêm sản phẩm
+
+        </button>
+
+        <button
+            onclick="logout()">
+
+            Đăng xuất
+
+        </button>
+
+        <hr>
+
+        <h3>
+
+            Danh sách sản phẩm
+
+        </h3>
+
+        <div
+            id="admin-list">
+
+        </div>
+
+    </div>
+
+</section><!-- ========================= -->
+<!-- LOADING -->
+<!-- ========================= -->
+
+<div id="loading" class="loading hidden">
+
+    <div class="loader"></div>
+
+    <p>Đang xử lý...</p>
+
+</div>
+
+<!-- ========================= -->
+<!-- TOAST -->
+<!-- ========================= -->
+
+<div id="toast"></div>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 SHOP TB SV2
+
+    </p>
+
+</footer>
+
+<!-- ========================= -->
+<!-- FIREBASE -->
+<!-- ========================= -->
+
+<script type="module"
+        src="firebase.js">
+</script>
+
+<!-- ========================= -->
+<!-- SCRIPT -->
+<!-- ========================= -->
+
+<script type="module"
+        src="script.js">
+</script>
+
+</body>
+
+</html>
